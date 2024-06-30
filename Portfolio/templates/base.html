@@ -1,0 +1,47 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- Global CSS files -->
+  <link rel="stylesheet" href="{% static 'css/w3.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+
+<body>
+  {% include 'app_mydetail/sidebar.html' %}
+  {% include 'app_mydetail/smallscreen.html' %}
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+      <!-- Header -->
+      {% include 'app_mydetail/1header.html' %}
+      
+      <!-- Photo grid (modal) -->
+      {% include 'app_mydetail/photogrid.html' %}
+
+      <!-- Services -->
+      {% include 'app_mydetail/projects.html' %}
+      
+      <!-- Designers -->
+      {% include 'app_mydetail/experience.html' %}
+      <!-- Contact -->
+
+      <!-- Footer -->
+      {% include 'app_mydetail/8footer.html' %}
+  </div>
+
+    <!-- Global javascript files -->
+  <script src="{% static 'js/basecontroller.js' %}"></script>
+
+</body>
+</html>
