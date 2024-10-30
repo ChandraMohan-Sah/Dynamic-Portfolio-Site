@@ -1,2 +1,2 @@
 # StaticBlogWebsite
-Testing Deployment of Static Website
+It contains a simplePortfolio Website
