@@ -9,7 +9,7 @@ project_list = [
         "year": 2024,
         "description": "The Public Transport Assistant for Estimated Time of Arrival (ETA) project aims to revolutionize the way people navigate public transport systems by providing real-time, accurate information about arrival times, delays, and optimal routes.",
         "link": "https://github.com/ChandraMohan-Sah/Public_Transport_Assistent"
-    },
+    }, 
     {
         "title": "Course Selling Website",
         "image": "app_mydetail/images/teaching.png",
