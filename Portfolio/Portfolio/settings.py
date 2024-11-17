@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-thne#fp@^hsr^%v*shfetw+h555z@so+_e67v6_02$mv$&3o#v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 
-# ALLOWED_HOSTS = ['chandramohan.pythonanywhere.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chandramohan.pythonanywhere.com']
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -127,6 +127,18 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
+
+#smtp server setup
+import os
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD') #password generated at google manager
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
