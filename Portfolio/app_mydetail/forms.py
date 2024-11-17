@@ -25,7 +25,7 @@ class ContactForm(forms.ModelForm):
             'fullname': forms.TextInput(
                 attrs={
                     'class': 'w3-input w3-border w3-border-blue w3-round-large w3-small',  # You can keep if needed
-                    'placeholder': 'Enter your full name',
+                    'placeholder': 'Enter your full name/company name',
                     'style': 'width: 100%; margin-bottom: 15px;'
                 }
             ),

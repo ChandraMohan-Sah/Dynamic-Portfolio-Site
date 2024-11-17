@@ -15,11 +15,12 @@
             <hr style="width:50px;border:5px solid white;" class="w3-round">
         </div>
     </div>
-
+    <br><br>
 </div>
 
 
 <div class="w3-content w3-round w3-padding-large w3-border w3-round-large" style="max-width: 100%">
+
     <div class="w3-row">
 
         <!-- Left Half with Image -->
@@ -35,10 +36,17 @@
                         <a href="mailto:chandramohansah1529@gmail.com"><i class="fas fa-envelope fa-2x mr-2"></i>chandramohansah1529@gmail.com</a>
                     </p>
                 </div>
+
+                        <!-- Phone Number -->
+                <p style="font-size: 1.5em; padding: 20px;" class="w3-panel w3-round-large w3-border w3-center ">
+                    <a href="tel:+1234567890"><i class="fas fa-phone-alt fa-2x mr-2"></i>+977 9861625334</a>
+                </p>
+
+
         </div>
         <!-- Right Half with Contact Form -->
         <div class="w3-col l6 w3-padding ">
-            <form  method="POST" class="w3-serif">
+            <form action="#" method="POST" class="w3-serif">
                 {% csrf_token %}
                 <div class="custom_style">
                     {{ form_data.fullname.label_tag }}
@@ -55,7 +63,7 @@
                     {{ form_data.description }}
                     {{ form_data.description.errors }}
                 </div>
-                <button>Send</button>
+                <button class="w3-round w3-large w3-padding-small w3-hover-green">Send</button>
             </form>
         </div>
 

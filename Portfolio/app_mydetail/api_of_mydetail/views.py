@@ -15,7 +15,7 @@ project_list = [
         "image": "app_mydetail/images/gps.png",
         "serial": "One",
         "year": 2024,
-        "description": "The Public Transport Assistant for Estimated Time of Arrival (ETA) project aims to revolutionize the way people navigate public transport systems by providing real-time, accurate information about arrival times, delays, and optimal routes.",
+        "description": "The Public Transport Assistant project provides real-time, accurate ETA, delays, and optimal routes for better navigation.",
         "link": "https://github.com/ChandraMohan-Sah/Public_Transport_Assistent"
     },
     {
@@ -31,7 +31,7 @@ project_list = [
         "image": "app_mydetail/images/cnn.png",
         "serial": "Three",
         "year": 2024,
-        "description": "Designed a CNN architecture for image classification that processed 28x28 images, sequentially applied convolutional layers with batch normalization, ReLU activation, and max pooling, then flattened features through fully connected layers, achieving classification into 10 digit classes using softmax",
+        "description": "Designed a CNN for 28x28 image classification, using conv layers, batch norm, ReLU, max pooling, and softmax for 10 digit classes.",
         "link": "https://colab.research.google.com/drive/13vTqkwE9-gm4gjVB_gInMROr69mCXOui"
     },
     {
@@ -176,7 +176,7 @@ def ContactPOST(request):
                 server.sendmail(sender_email, recipient_email, email_message)
 
             # Add a success message
-            messages.success(request, "Thanks For Approaching Me!")
+            messages.success(request, "Thank you for reaching out!")
 
             # Save form and redirect
             # form.save()
