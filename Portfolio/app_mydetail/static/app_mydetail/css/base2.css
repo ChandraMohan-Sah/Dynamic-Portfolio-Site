@@ -1,0 +1,33 @@
+body {
+    background-color: #555; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: "Courier New", Courier, monospace; /* Monospace font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+
+  .container {
+    width: 1135px;
+  }
+
+
+  .black {
+    background-color: #1e202a; /* Slightly lighter dark color */
+
+  }
+
+  .key {
+    color: #00d7ff; /* Light blue */
+  }
+
+
+  .value {
+    color: #ff7a00; /* Orange */
+  }
+
+
+  .number {
+    color: #ff5555; /* Light red */
+  }

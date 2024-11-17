@@ -68,67 +68,103 @@ project_list = [
 ]
 
 
-
 experiences = [
     {
-        "tech":"CPP",
-        "percentage":"95%",
-        "color":"w3-blue"
+        "tech": "CPP",
+        "level": "Intermediate",
+        "icon": "🖥️"
     },
     {
-        "tech":"Arduino Programming",
-        "percentage":"35%",
-        "color":"w3-grey"
+        "tech": "Arduino Programming",
+        "level": "Intermediate",
+        "icon": "🔌"
     },
     {
-        "tech":"Python",
-        "percentage":"85%",
-        "color":"w3-red"
-    },
-
-    {
-        "tech":"HTML, CSS, Javascript",
-        "percentage":"20%",
-        "color":"w3-pink"
+        "tech": "Python",
+        "level": "Advanced",
+        "icon": "🐍"
     },
     {
-        "tech":"Django",
-        "percentage":"85%",
-        "color": " w3-teal"
+        "tech": "HTML, CSS, Javascript",
+        "level": "Beginner",
+        "icon": "🌐"
     },
     {
-        "tech":"Django Rest Framework",
-        "percentage":"85%",
-        "color": " w3-teal"
+        "tech": "Django",
+        "level": "Advanced",
+        "icon": "🌿"
     },
     {
-        "tech":"Database with MySQL",
-        "percentage":"75%",
-        "color":"w3-blue"
+        "tech": "Django Rest Framework",
+        "level": "Advanced",
+        "icon": "🔗"
     },
     {
-        "tech":"git and Github",
-        "percentage":"35%",
-        "color":"w3-grey"
-    },
-
-    {
-        "tech":"Kicad",
-        "percentage":"35%",
-        "color":"w3-brown"
+        "tech": "Database with MySQL",
+        "level": "Advanced",
+        "icon": "🗂️"
     },
     {
-        "tech":"Linux Familiarity",
-        "percentage":"30%",
-        "color":"w3-green"
+        "tech": "Git and Github",
+        "level": "Intermediate",
+        "icon": "🔧"
     },
     {
-        "tech":"Pytorch",
-        "percentage":"20%",
-        "color":"w3-pink"
+        "tech": "Kicad",
+        "level": "Intermediate",
+        "icon": "📐"
+    },
+    {
+        "tech": "Linux Familiarity",
+        "level": "Intermediate",
+        "icon": "🐧"
+    },
+    {
+        "tech": "Pytorch",
+        "level": "Beginner",
+        "icon": "🔥"
     }
 ]
 
+
+interests = [
+    {
+        "interest": "Problem Solving",
+        "icon": "🧩"
+    },
+    {
+        "interest": "Machine Learning",
+        "icon": "🧠"
+    },
+    {
+        "interest": "Deep Learning",
+        "icon": "🤖"
+    },
+    {
+        "interest": "Backend Development",
+        "icon": "💻"
+    },
+    {
+        "interest": "Embedded Systems",
+        "icon": "🔧"
+    },
+    {
+        "interest": "Football",
+        "icon": "⚽"
+    },
+    {
+        "interest": "Badminton",
+        "icon": "🏸"
+    },
+    {
+        "interest": "Calisthenics",
+        "icon": "💪"
+    }
+]
+
+def Expertise(request):
+    return render(request, "base2.html")
+    
 
 def home(request):
     if request.method == "POST":
@@ -139,7 +175,8 @@ def home(request):
     context = {
         "projects": project_list,
         "experiences": experiences,
-        "form_data": form
+        "form_data": form,
+        "interests":interests
     }
 
     return render(request, 'base.html', context)
@@ -194,3 +231,5 @@ def ContactPOST(request):
 
     # If form is invalid, show validation errors
     return render(request, 'base.html', {"form_data": form})
+
+

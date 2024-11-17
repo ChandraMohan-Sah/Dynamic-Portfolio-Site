@@ -1,0 +1,40 @@
+{% load static %}
+
+<style>
+  .resized-image {
+      width: 230px; /* Adjust the width as needed */
+      height: auto; /* Ensures the height scales proportionally */
+  }
+</style>
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+        <!-- Sidebar/menu -->
+        <div class="w3-bar-block">
+
+            <div class="w3-panel w3-topbar w3-bottombar w3-border-blue w3-light-grey">
+                <h1 class="w3-large w3-text-black  w3-left-align"><b>My Learning Curve</b></h1>
+            </div><br>
+              
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Programming</a><br>
+            <a href="#webdev" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Web Development</a><br>
+            <a href="#ml" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Machine Learning</a><br>
+            <a href="#dl" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Deep Learning</a><br>
+            <a href="#vc" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Version Control</a><br>
+            <a href="#do" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">DevOPS</a><br>
+            <a href="#doc" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Documentation</a><br>
+         </div>
+
+        <!-- Know Me Better Button at the bottom -->
+    <div>
+        <a href="{% url "home" %}" class="w3-button w3-border w3-border-red w3-round-large "  >
+            Back
+        </a>
+    </div> 
+
+</nav>
+
+

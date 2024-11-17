@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ChandraMohan Sah</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <!-- Global CSS files -->
+  <link rel="stylesheet" href="{% static 'css/w3.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'app_mydetail/css/projects.css' %}">
+  <link rel="stylesheet" href="{% static '/app_mydetail/css/base2.css' %}">
+</head>
+
+
+
+<body>
+  {% include 'app_mydetail/second/sidebar1.html' %}
+   {% include 'app_mydetail/first/smallscreen.html' %}
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    {% include 'app_mydetail/second/programming.html' %}
+
+    {% include 'app_mydetail/second/webdev.html' %}
+
+    {% include 'app_mydetail/second/ml.html' %}
+
+    {% include 'app_mydetail/second/dl.html' %}
+
+    <div >
+      <div class="w3-panel black w3-leftbar w3-hide-small w3-large w3-serif value" style="padding-down:60px;">
+        <p><i>"Those who cannot remember the past are condemned to repeat it."</i></p>
+        <p class="w3-right">-George Santayana</p>
+      </div>
+      <br><br>
+    </div>
+
+
+  </div>
+
+    <!-- Global javascript files -->
+  <script src="{% static 'js/basecontroller.js' %}"></script>
+  <script src="{% static 'js/accordian.js' %}"></script>
+
+</body>
+</html>

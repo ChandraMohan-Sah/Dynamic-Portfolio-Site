@@ -1,0 +1,26 @@
+{% load static %}
+
+
+    <link rel="stylesheet" href="{% static '/app_mydetail/css/interests.css' %}">
+
+
+    <div class="w3-container" id="interests" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-white"><b>Interests</b></h1>
+        <hr style="width:50px;border:5px solid white" class="w3-round">
+    </div>
+
+     
+    <div class="interests-container w3-container" >
+        <div class="grid">
+            {% for interes in interests %}
+                <div class="card">
+                    <div class="icon problem-solving">{{interes.icon}}</div>
+                    <div class="text">{{interes.interest}}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+

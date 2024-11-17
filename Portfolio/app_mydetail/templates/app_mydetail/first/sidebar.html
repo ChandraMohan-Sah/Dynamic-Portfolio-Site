@@ -1,0 +1,37 @@
+{% load static %}
+
+<style>
+  .resized-image {
+      width: 230px; /* Adjust the width as needed */
+      height: auto; /* Ensures the height scales proportionally */
+  }
+
+  .know-me-btn {
+    margin-top: auto; /* Push to the bottom */
+    width: 100%;
+    text-align: center;
+  }
+</style>
+ 
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">About</a><br>
+      <a href="#project" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Projects</a><br>
+      <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Experience</a><br>
+      <a href="#interests" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Interests</a><br>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-border w3-round-large">Contacts</a><br>
+   </div>
+
+    <!-- Know Me Better Button at the bottom -->
+    <div >
+      <a href="{% url "expertise" %}" class=" w3-button w3-border w3-border-red w3-round-large w3-display-bottomleft " style="margin-left:50px;margin-bottom:30px ">
+        Know Me Better
+      </a>
+    </div>
+</nav>
+
+
+
