@@ -1,0 +1,70 @@
+<style>
+    .custom_style {
+        font-family: "Serif", sans-serif; /* w3-serif */
+        color: white; /* w3-text-teal */
+        font-size: 1.2em; /* w3-large */
+    }
+</style>
+
+
+<div class="w3-container w3-round w3-padding-8" style="margin-top:25px;padding-right:10px">
+
+    <div class="w3-container" style="margin-top:80px" id="contact">
+        <h1 class="w3-xxxlarge w3-text-white w3-left-align"><b>Contact Me</b></h1>
+        <div class="text-right">
+            <hr style="width:50px;border:5px solid white;" class="w3-round">
+        </div>
+    </div>
+
+</div>
+
+
+<div class="w3-content w3-round w3-padding-large w3-border w3-round-large" style="max-width: 100%">
+    <div class="w3-row">
+
+        <!-- Left Half with Image -->
+        <div class="w3-col l6 w3-padding">
+                <!-- Main Contact Section -->
+                <div class="w3-panel w3-border w3-round-large w3-center w3-padding-32 w3-text-white">
+                    <p>
+                        <a href="https://github.com/ChandraMohan-Sah" target="_blank"><i class="fab fa-github fa-2x mr-2"></i>GitHub</a> &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/chandramohan-sah-0918b5212/" target="_blank"><i class="fab fa-linkedin fa-2x mr-2"></i>LinkedIn</a> &nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/csah9628/" target="_blank"><i class="fab fa-instagram fa-2x mr-2"></i>Instagram</a>
+                    </p>
+                    <p style="font-size: 1.5em; padding-top: 20px;" class="w3-hide-small">
+                        <a href="mailto:chandramohansah1529@gmail.com"><i class="fas fa-envelope fa-2x mr-2"></i>chandramohansah1529@gmail.com</a>
+                    </p>
+                </div>
+        </div>
+        <!-- Right Half with Contact Form -->
+        <div class="w3-col l6 w3-padding ">
+            <form action="#" method="POST" class="w3-serif">
+                {% csrf_token %}
+                <div class="custom_style">
+                    {{ form_data.fullname.label_tag }}
+                    {{ form_data.fullname }}
+                    {{ form_data.fullname.errors }}
+                </div>
+                <div class="custom_style">
+                    {{ form_data.email.label_tag }}
+                    {{ form_data.email }}
+                    {{ form_data.email.errors }}
+                </div>
+                <div class="custom_style">
+                    {{ form_data.description.label_tag }}
+                    {{ form_data.description }}
+                    {{ form_data.description.errors }}
+                </div>
+                <button>Send</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<footer class="w3-container w3-center w3-padding-16">
+    <p>Copyright © 2024 Chandra Mohan Sah. All Rights Reserved.</p>
+</footer>
+
+
+
