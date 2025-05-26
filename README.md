@@ -9,7 +9,7 @@ A dynamic and responsive portfolio website built using Django and Jinja templati
 - 🌐 Responsive Design — Built with **W3.CSS** to ensure mobile-friendly, clean UI across all devices.
 - 🔄 Dynamic Content — Projects and skills are rendered dynamically using **Jinja templates**.
 - 📬 Contact Form — Integrated **SMTP** to send direct emails from the website.
-- 🛢️ Backend Database — Uses **MySQL** to manage all portfolio data including projects and messages.
+- 🛢️ Backend Database — Uses **File** to store data due to less amount of data.
 - ☁️ Online Hosting — Seamless deployment on **PythonAnywhere** for 24/7 accessibility.
 
 ---
