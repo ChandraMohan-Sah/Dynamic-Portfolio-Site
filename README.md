@@ -32,3 +32,10 @@ pip install -r requirements.txt
 
 # 4. Run the development server
 python manage.py runserver
+```
+
+🌐 **Live Demo**
+
+Try the live version here:  
+[https://chandramohan.pythonanywhere.com/](https://chandramohan.pythonanywhere.com/)
+
